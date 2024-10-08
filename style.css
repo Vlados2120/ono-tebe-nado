@@ -20,10 +20,15 @@ header {
   display: grid;
   grid-template-columns: 0.53fr 1fr 1fr;
   grid-column-gap: 30px;
+  list-style: circle;
 }
 
 .header__logo-image {
   width: 137px;
+}
+
+.info {
+  list-style: circle;
 }
 
 .header__address {
@@ -41,7 +46,12 @@ header {
 .number {
   list-style-type: none;
 }
+
 .mail {
+  list-style-type: none;
+}
+
+.adds {
   list-style-type: none;
 }
 
@@ -94,7 +104,6 @@ header {
   text-align: center;
   margin-left: -85px;
   line-height: 100px;
-  letter-spacing: 60%;
 }
 
 .aligned-text_right {
