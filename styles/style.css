@@ -1,13 +1,359 @@
 header {
-    width: 1052px;
-    height: 105px;
-    top: 92px;
-    left: 24px;
-    gap: 0px;
-    opacity: 0px;
-    
+  display: flex;
+  align-items: center;
+  width: 1052px;
+  margin-top: 90px;
+  font-size: 19px;
 }
 
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+  margin-left: 40px;
+}
 
+.no-underline {
+  text-decoration: none;
+}
 
+.header__links-list {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-column-gap: 27px;
+  list-style: circle;
+}
 
+.header__logo-image {
+  width: 137px;
+  height: 105px;
+  margin-left: -3px;
+  margin-top: 3px;
+}
+
+.info {
+  list-style: circle;
+  list-style-type: none;
+}
+
+address {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: grid;
+  list-style-type: none;
+  padding-left: 188px;
+  padding-top: 5px;
+  line-height: 24.3px;
+}
+
+.cover {
+  width: 1100px;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-top: 92px;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  z-index: 0;
+  background-color: black;
+  inset: 0px;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+  gap: 20px;
+  padding-top: 165px;
+  padding-left: 50px;
+  letter-spacing: 30px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.aligned__text {
+  display: block;
+  line-height: 11px;
+  letter-spacing: 30px;
+  text-align: left;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.aligned-text_center {
+  display: block;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 30px;
+  transform: translateX(-24px);
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+  line-height: 1;
+  letter-spacing: 30px;
+  text-align: right;
+  transform: translateX(-50px);
+}
+
+.no-letter-spacing {
+  letter-spacing: normal;
+}
+.cover__description-text {
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 19px;
+  margin-left: 78px;
+  text-transform: uppercase;
+  margin-top: -148px;
+}
+
+.cover__description {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  gap: 75px;
+}
+
+.bet-button {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
+  border: 1px currentColor solid;
+  padding: 13px 32px;
+  line-height: 25.83px;
+  margin-top: -150px;
+  font-family: Raleway, sans-serif;
+}
+
+.lots {
+  margin-top: 179px;
+  margin-left: 24px;
+}
+
+.lots__heading {
+  padding-left: 40px;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+}
+
+.lots__card-list-item {
+  min-height: 563px;
+  width: 334px;
+}
+
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  justify-content: start;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots_card_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  column-gap: 0px;
+  margin-top: 27px;
+  row-gap: 50px;
+}
+
+.card__text-film {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  padding: 50px 40px;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.card__text-book {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding: 0px 40px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+.card__text-picture {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding: 50px 40px;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 24px;
+  pointer-events: none;
+}
+
+.card__title-film {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  text-decoration: underline;
+  padding: 50px 40px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.card__title-book {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  text-decoration: underline;
+  padding: 0px 40px;
+  margin-top: 50px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+}
+
+.card__title-picture {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  text-decoration: underline;
+  padding: 40px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.text-link {
+  display: block;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 30px;
+  line-height: 23.48px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 25px;
+  margin-top: 182px;
+}
+
+.about__logo {
+  display: flex;
+  background-color: black;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__column {
+  justify-self: center;
+}
+
+.about__title {
+  font-size: 40px;
+  line-height: 46.96px;
+  padding-top: 103px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 98px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-weight: 400;
+  width: 100%;
+  padding-right: 26px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 180px 50px 100px;
+}
+
+/* не понимаю почему текст выглядит меньше чем на макете*/
+.footer__address {
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style-type: none;
+  gap: 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21.13px;
+  padding-left: 75px;
+}
