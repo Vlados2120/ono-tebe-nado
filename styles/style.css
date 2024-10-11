@@ -91,7 +91,6 @@ address {
   display: block;
   line-height: 11px;
   letter-spacing: 30px;
-  text-align: left;
 }
 
 .letter-spacing-extended {
@@ -103,7 +102,7 @@ address {
   line-height: 1;
   text-align: center;
   letter-spacing: 30px;
-  transform: translateX(-24px);
+  padding-right: 50px;
 }
 
 .aligned-text_right {
@@ -111,7 +110,8 @@ address {
   text-align: right;
   line-height: 1;
   letter-spacing: 30px;
-  transform: translateX(-50px);
+  padding-right: 50px; /* в инструментах разработчика прописано margin-right:-0.3em не понимаю как можно справиться без
+   отступов которые не принимали в двух предыдущих сдачах ,расстояния между буквами прописаны правильно*/
 }
 
 .no-letter-spacing {
@@ -124,7 +124,7 @@ address {
   word-spacing: 19px;
   margin-left: 78px;
   text-transform: uppercase;
-  margin-top: -148px;
+  margin-top: 135px;
 }
 
 .cover__description {
@@ -141,9 +141,10 @@ address {
   color: white;
   font-size: 22px;
   border: 1px currentColor solid;
-  padding: 13px 32px;
+  margin-left: 2px;
+  padding: 11px 32px;
   line-height: 25.83px;
-  margin-top: -150px;
+  margin-top: 135px;
   font-family: Raleway, sans-serif;
 }
 
@@ -204,7 +205,7 @@ address {
   row-gap: 50px;
 }
 
-.card__text-film {
+.card__text {
   color: white;
   position: relative;
   z-index: 1;
@@ -214,15 +215,9 @@ address {
   line-height: 24px;
 }
 
-.card__text-book {
-  color: white;
-  position: relative;
-  z-index: 1;
+.book {
   padding: 0px 40px;
-  font-size: 20px;
-  text-decoration: none;
   margin-top: 0px;
-  line-height: 24px;
 }
 
 .card__text-picture {
@@ -236,40 +231,20 @@ address {
   pointer-events: none;
 }
 
-.card__title-film {
+.card__title {
   color: white;
   position: relative;
   z-index: 1;
   font-size: 22px;
   text-decoration: underline;
-  padding: 50px 40px;
+  padding: 50px 40px 0px;
   line-height: 26.4px;
   text-transform: uppercase;
   margin-top: 0px;
 }
 
-.card__title-book {
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-size: 22px;
-  text-decoration: underline;
-  padding: 0px 40px;
-  margin-top: 50px;
-  line-height: 26.4px;
-  text-transform: uppercase;
-}
-
-.card__title-picture {
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-size: 22px;
-  text-decoration: underline;
-  padding: 40px;
-  line-height: 26.4px;
-  text-transform: uppercase;
-  margin-top: 10px;
+.film {
+  display: block;
 }
 
 .text-link {
@@ -324,6 +299,7 @@ address {
   font-weight: 400;
   width: 100%;
   padding-right: 26px;
+  letter-spacing: 1%;
 }
 
 footer {
@@ -332,10 +308,10 @@ footer {
   padding: 180px 50px 100px;
 }
 
-/* не понимаю почему текст выглядит меньше чем на макете*/
-.footer__address {
-  padding-left: 0px;
+.footer-address {
+  padding-left: 1px;
   padding-top: 0px;
+  font-size: 18px;
 }
 
 .footer__social-list {
@@ -354,5 +330,5 @@ footer {
   text-align: center;
   font-size: 18px;
   line-height: 21.13px;
-  padding-left: 75px;
+  padding-left: 35px;
 }
